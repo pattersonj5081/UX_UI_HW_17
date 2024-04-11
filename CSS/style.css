@@ -4,10 +4,16 @@ vertical-align:top;}
 .logo
 {width:23%;
 padding:1%;
+position:absolute
+left:0;
+top:0
 text-align:center;}
 nav
 {width:73%;
-padding:1%;}
+padding: 20%;
+display:flex;
+justify-content:space-between;
+text-align: center;}
 ul
 {width:50%;
 margin-left:auto;}
