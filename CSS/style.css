@@ -5,16 +5,16 @@ grid-template-rows: 1fr;
 grid-template-areas:"logo left . Right";}
 .logo
 {display: flex;
-justify-content: flex-start;
 grid-area:"logo";}
 ul
 {display:flex;}
 #leftTopNav
 {display: flex;
+ justify-content: left;
 }
 li
 {
-justify-conte ;
+padding-inline: 70px;
  grid-area: left;
 list-style: none;
 }
@@ -22,10 +22,10 @@ a{
 background-color: pink;}
 #rightTopNav
 {display: flex;
+    justify-content: right;
 }
 li
 {
-justify-content:flex-end;
 grid-area:right;
 list-style: none;
 }
