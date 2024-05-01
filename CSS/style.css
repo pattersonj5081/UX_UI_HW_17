@@ -1,34 +1,30 @@
 header{
-display: grid;
-grid-template-columns: 1fr,1fr,1fr,1fr;
-grid-template-rows: 1fr;
-grid-template-areas:"logo left . Right";}
+display:grid; 
+grid-template-columns:auto 1fr 1fr;
+grid-template-areas:"logo left right";
+align-items: center;}
 .logo
-{display: flex;
-grid-area:"logo";}
-ul
-{display:flex;}
+{
+grid-area:logo;}
 #leftTopNav
-{display: flex;
- justify-content: left;
+{grid-area:left;
 }
-li
-{
-padding-inline: 70px;
- grid-area: left;
-list-style: none;
-}
-a{
-background-color: pink;}
 #rightTopNav
-{display: flex;
-    justify-content: right;
+{grid-area: right;
+}
+ul{display: flex;
+justify-content: flex-start;
+padding: 0;}
+#rightTopNav ul{
+    justify-content: flex-end;
 }
 li
 {
-grid-area:right;
 list-style: none;
+margin:0 10px;
 }
 a
 {background-color: pink;
+ padding: 5 px 10px;
+ text-decoration: none;
 }
